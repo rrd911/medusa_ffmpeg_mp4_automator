@@ -3,7 +3,7 @@ FROM pymedusa/medusa:latest
 RUN \
 echo "**** install packages ****" && \
 apk add --no-cache \
-ffmpeg\
+ffmpeg &&\
 pip install --upgrade pip && \
 pip install requests && \
 pip install requests[security] && \
