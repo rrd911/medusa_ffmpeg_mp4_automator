@@ -14,6 +14,9 @@ pip install 'subliminal<2' && \
 pip install stevedore==1.19.1 && \
 pip install python-dateutil && \
 pip install qtfaststart && \
-git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /sickbeard_mp4_automator && \
-chown -R abc:ping /config/sickbeard_mp4_automator
-copy autoProcess.ini.sample /sickbeard_mp4_automator/autoProcess.ini.sample
+git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
+chown -R abc:ping /app/sickbeard_mp4_automator && \
+copy autoProcess.ini /sickbeard_mp4_automator/autoProcess.ini && \
+ln -s /config_mp4_automator/autoProcess.ini /app/sickbeard_mp4_automator/autoProcess.ini && \
+
+VOLUME config_mp4_automator
