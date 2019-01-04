@@ -16,7 +16,6 @@ pip install python-dateutil && \
 pip install qtfaststart && \
 git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
 chown -R abc:ping /app/sickbeard_mp4_automator && \
-copy autoProcess.ini /app/sickbeard_mp4_automator/autoProcess.ini && \
 ln -s /config_mp4_automator/autoProcess.ini /app/sickbeard_mp4_automator/autoProcess.ini && \
 
 VOLUME config_mp4_automator
