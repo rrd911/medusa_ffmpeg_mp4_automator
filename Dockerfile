@@ -2,7 +2,7 @@ FROM pymedusa/medusa:latest
 RUN \
 echo "**** install packages ****" && \
 apk add --no-cache \
-ffmpeg && \
+ffmpeg \
 nano && \
 pip install --upgrade pip && \
 pip install requests && \
