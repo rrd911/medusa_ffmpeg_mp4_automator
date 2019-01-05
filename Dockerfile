@@ -3,6 +3,7 @@ RUN \
 echo "**** install packages ****" && \
 apk add --no-cache \
 ffmpeg && \
+nano && \
 pip install --upgrade pip && \
 pip install requests && \
 pip install requests[security] && \
