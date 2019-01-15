@@ -21,33 +21,7 @@ https://www.smarthomebeginner.com/docker-home-media-server-2018-basic
 docker-compose.yml sample
 https://github.com/rrd911/medusa_ffmpeg_mp4_automator/blob/master/docker-compose.yml
 
- medusa-kids-mp4:
-    image: raydiasdockerhub/medusa_ffmpeg_mp4_automator
-    container_name: medusa-kids-mp4
-    hostname: medusa-kids-mp4
-    ports:
-    - "8083:8081"
-    volumes:
-    - ${USERDIR}/docker/medusa-kids-mp4:/config
-    - ${USERDIR}/Downloads/completed/anime:/anime
-    - ${USERDIR}/Downloads/completed/tvshows:/tv
-    - ${USERDIR}/Downloads/completed/kids_tv:/kids_tv
-    - ${USERDIR}/docker/certs:/certs
-    - /media/tv_shows:/media/tv_shows
-    - /media/tv:/media/tv
-    - /media/PlexNAS/TV_Shows:/media/PlexNAS/TV_Shows
-    - /media/anime:/media/anime
-    - /media/PlexNAS/LittleRay:/media/PlexNAS/LittleRay
-    - /media/ramdisk:/ramdisk
-    - /media/qnap_kidstv:/media/qnap_kidstv
-    - /media/qnap_tv:/media/qnap_tv
-    - /media/qnap_anime:/media/qnap_anime
-    environment:
-    - PUID=${PUID}
-    - PGID=${PGID}
-    - TZ=${TZ}
-    restart: unless-stopped
-
+ 
 2.) Either copy the autoProcess.ini from my git repo or copy the autoProcess.ini.sample from within the docker image /app/sickbeard_mp4_automator directory to /config directory of the docker image and rename it autoProcess.ini
 
 The /app/sickbeard_mp4_automator/autoProcess.ini file is a symlink to the /config/autoProcess.ini so the settings should be retained when the image is updated.
