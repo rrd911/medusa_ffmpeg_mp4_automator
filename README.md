@@ -19,6 +19,7 @@ I used the following as a guide to build my docker server on Ubuntu 16.04
 https://www.smarthomebeginner.com/docker-home-media-server-2018-basic
 
 docker-compose.yml sample
+https://github.com/rrd911/medusa_ffmpeg_mp4_automator/blob/master/docker-compose.yml
 
  medusa-kids-mp4:
     image: raydiasdockerhub/medusa_ffmpeg_mp4_automator
