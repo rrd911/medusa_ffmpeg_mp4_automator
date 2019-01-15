@@ -14,6 +14,7 @@ Additional python dependencines and FFMPEG
 So I created this image to ensure video files are in a format that will play best on my Plex clients. I chose to go with h264/mp4/aac sinced it seems to be the most universal format for the devices that will play content from my Plex server.
 
 Basic Instructions:
+
 1.) pull the docker image:
 I used the following as a guide to build my docker server on Ubuntu 16.04
 https://www.smarthomebeginner.com/docker-home-media-server-2018-basic
