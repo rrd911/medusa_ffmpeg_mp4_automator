@@ -22,10 +22,10 @@ docker-compose.yml sample
 https://github.com/rrd911/medusa_ffmpeg_mp4_automator/blob/master/docker-compose.yml
 
  medusa-kids-mp4:
-     image: raydiasdockerhub/medusa_ffmpeg_mp4_automator
-     container_name: medusa-kids-mp4
-     hostname: medusa-kids-mp4
-     ports:
+    image: raydiasdockerhub/medusa_ffmpeg_mp4_automator
+    container_name: medusa-kids-mp4
+    hostname: medusa-kids-mp4
+    ports:
     - "8083:8081"
     volumes:
     - ${USERDIR}/docker/medusa-kids-mp4:/config
@@ -47,7 +47,6 @@ https://github.com/rrd911/medusa_ffmpeg_mp4_automator/blob/master/docker-compose
     - PGID=${PGID}
     - TZ=${TZ}
     restart: unless-stopped
-
 
 2.) Either copy the autoProcess.ini from my git repo or copy the autoProcess.ini.sample from within the docker image /app/sickbeard_mp4_automator directory to /config directory of the docker image and rename it autoProcess.ini
 
