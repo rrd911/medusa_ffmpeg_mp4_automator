@@ -29,8 +29,8 @@ https://github.com/rrd911/medusa_ffmpeg_mp4_automator/blob/master/docker-compose
     - "8083:8081"
     volumes:
     - ${USERDIR}/docker/medusa-kids-mp4:/config
-    - ${USERDIR}/Downloads/completed/anime:/downloads/anime
-    - ${USERDIR}/Downloads/completed/tvshows:/tv2
+    - ${USERDIR}/Downloads/completed/anime:/anime
+    - ${USERDIR}/Downloads/completed/tvshows:/tv
     - ${USERDIR}/Downloads/completed/kids_tv:/kids_tv
     - ${USERDIR}/docker/certs:/certs
     - /media/tv_shows:/media/tv_shows
@@ -47,6 +47,7 @@ https://github.com/rrd911/medusa_ffmpeg_mp4_automator/blob/master/docker-compose
     - PGID=${PGID}
     - TZ=${TZ}
     restart: unless-stopped
+
 
 2.) Either copy the autoProcess.ini from my git repo or copy the autoProcess.ini.sample from within the docker image /app/sickbeard_mp4_automator directory to /config directory of the docker image and rename it autoProcess.ini
 
