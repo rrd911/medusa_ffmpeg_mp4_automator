@@ -1,4 +1,4 @@
-FROM pymedusa/medusa:develop
+FROM pymedusa/medusa:latest
 RUN \
 echo "**** install packages ****" && \
 apk add --no-cache \
