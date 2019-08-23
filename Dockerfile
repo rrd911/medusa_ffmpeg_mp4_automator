@@ -6,7 +6,6 @@ ffmpeg \
 git \
 python3-pip \
 nano && \
-
 python3 pip install --upgrade pip && \
 python3 pip install requests && \
 python3 pip install requests[security] && \
