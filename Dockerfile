@@ -1,4 +1,4 @@
-FROM linuxserver/medusa:develop
+FROM linuxserver/medusa
 RUN \
 echo "**** install packages ****" && \
 apk add --no-cache \
