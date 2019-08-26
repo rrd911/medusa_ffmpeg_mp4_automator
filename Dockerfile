@@ -1,4 +1,4 @@
-FROM linuxserver/medusa
+FROM pymedusa/medusa
 RUN \
 echo "**** install packages ****" && \
 apk add --no-cache \
