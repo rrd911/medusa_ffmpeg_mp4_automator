@@ -1,8 +1,9 @@
-FROM pymedusa/medusa
+FROM linuxserver/medusa
 RUN \
 echo "**** install packages ****" && \
 apk add --no-cache \
 ffmpeg \
+git \
 nano && \
 pip install --upgrade pip && \
 pip install requests && \
