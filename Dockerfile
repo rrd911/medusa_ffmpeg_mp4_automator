@@ -8,6 +8,7 @@ python3 \
 py3-pip \
 nano && \
 # install pip, venv, and set up a virtual self contained python environment
+  pip install --upgrade pip && \
   python3 -m pip install --user --upgrade pip && \
   python3 -m pip install --user virtualenv && \
   mkdir /usr/local/bin/sma && \
