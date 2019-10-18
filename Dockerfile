@@ -5,7 +5,7 @@ apk update && apk add --no-cache \
 ffmpeg \
 git \
 python3 \
-python3-pip \
+py3-pip \
 nano && \
 # install pip, venv, and set up a virtual self contained python environment
   python3 -m pip install --user --upgrade pip && \
