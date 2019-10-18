@@ -3,6 +3,7 @@ RUN \
 echo "**** install packages ****" && \
 apk update && apk update && apk add --no-cache \
 ffmpeg \
+gcc \
 git \
 py-pip \
 nano && \
