@@ -8,6 +8,9 @@ python3 \
 gcc \
 libffi-dev \
 libc-dev \
+openssl-dev \
+libxml2-dev \
+libxslt-dev \
 py2-pip \
 py3-pip \
 python2-dev \
