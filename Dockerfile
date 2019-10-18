@@ -6,6 +6,8 @@ ffmpeg \
 git \
 python3 \
 gcc \
+libffi-dev \
+libc-dev \
 py2-pip \
 py3-pip \
 python2-dev \
