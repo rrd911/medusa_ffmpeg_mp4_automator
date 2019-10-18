@@ -5,6 +5,7 @@ apk update && apk add --no-cache \
 ffmpeg \
 git \
 python3 \
+gcc \
 py2-pip \
 py3-pip \
 python2-dev \
