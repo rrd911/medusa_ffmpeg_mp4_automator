@@ -4,6 +4,7 @@ echo "**** install packages ****" && \
 apk update && apk add --no-cache \
 ffmpeg \
 git \
+python-pip \
 nano && \
 pip install --upgrade pip && \
 pip install requests && \
