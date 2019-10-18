@@ -9,6 +9,16 @@ py2-pip \
 py3-pip \
 nano && \
 # install pip, venv, and set up a virtual self contained python environment
+pip install --upgrade pip && \
+pip install requests && \
+pip install requests[security] && \
+pip install requests-cache && \
+pip install babelfish && \
+pip install 'guessit<2' && \
+pip install 'subliminal<2' && \
+pip install stevedore==1.19.1 && \
+pip install python-dateutil && \
+pip install qtfaststart && \
   pip install --upgrade pip && \
   python3 -m pip install --user --upgrade pip && \
   python3 -m pip install --user virtualenv && \
