@@ -7,6 +7,8 @@ git \
 python3 \
 py2-pip \
 py3-pip \
+python3-dev \
+python3-dev \
 nano && \
 # install pip, venv, and set up a virtual self contained python environment
 pip install --upgrade pip && \
