@@ -23,7 +23,6 @@ nano && \
     'stevedore==1.19.1' \
     python-dateutil \
     qtfaststart && \
-# download repo
 git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
 chown -R abc:ping /app/sickbeard_mp4_automator && \
 ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/autoProcess.ini
