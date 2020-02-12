@@ -20,9 +20,9 @@ python3 -m pip install requests && \
 python3 -m pip install requests[security] && \
 python3 -m pip install requests-cache && \
 python3 -m pip install babelfish && \
-python3 -m pip install 'guessit<2' && \
-python3 -m pip install 'subliminal<2' && \
-python3 -m pip install 'stevedore==1.19.1' && \
+python3 -m pip install guessit && \
+python3 -m pip install subliminal && \
+python3 -m pip install stevedore && \
 python3 -m pip install python-dateutil && \
 python3 -m pip install qtfaststart && \
 python3 -m pip install tmdbsimple && \
