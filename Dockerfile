@@ -1,4 +1,4 @@
-FROM linuxserver/medusa:v0.3.12-ls38
+FROM linuxserver/medusa:v0.3.12-ls37
 RUN \
 echo "**** install packages ****" && \
 apk update && apk add --no-cache \
