@@ -29,7 +29,7 @@ The /app/sickbeard_mp4_automator/autoProcess.ini file is a symlink to the /confi
 
 3.) modify Sickbeard and Sickrage section of the the /config/autoProcess.ini adding the api key for medusa. Modify any other paramaters you like.
 
-4.) Enable post process in the Post Processing settings of medusa and add to the extra scripts the path to the post processing script: /usr/bin/python /app/sickbeard_mp4_automator/postSickbeard.py then save the settings. Be sure verify they are saved correctly 
+4.) Enable post process in the Post Processing settings of medusa and add to the extra scripts the path to the post processing script: /app/sickbeard_mp4_automator/postSickbeard.py then save the settings. Be sure verify they are saved correctly 
 
 5.) I restarted the docker medusa image and watched the logs via portainer to see if there are any errors. Then I took a video file and ran a test post processing while watching the medusa logs for any errors.
 
