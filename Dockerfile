@@ -1,9 +1,11 @@
-FROM linuxserver/medusa:v0.3.12-ls37
+FROM linuxserver/medusa
 RUN \
 echo "**** install packages ****" && \
 apk update && apk add --no-cache \
 ffmpeg \
 git \
+python \
+python-dev \
 python3 \
 gcc \
 libffi-dev \
