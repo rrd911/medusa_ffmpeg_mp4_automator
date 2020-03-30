@@ -12,6 +12,7 @@ openssl-dev \
 libxml2-dev \
 libxslt-dev \
 py3-pip \
+python3-pip \
 python3-dev \
 nano && \
 # install pip, venv, and set up a virtual self contained python environment
