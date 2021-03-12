@@ -23,4 +23,19 @@ ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.in
 
 # install pip, venv, and set up a virtual self contained python environment
 python3 -m pip install --user --upgrade pip && \
-python3 -m pip install r /app/sickbeard_mp4_automator/setup/requirements.txt
+python3 -m pip install setuptools && \
+python3 -m pip install wheel && \
+python3 -m pip install idna && \
+python3 -m pip install idna && \
+python3 -m pip install requests-cache && \
+python3 -m pip install requests && \
+python3 -m pip install requests-cache && \
+python3 -m pip install babelfish && \
+python3 -m pip install guessit && \
+python3 -m pip install subliminal && \
+python3 -m pip install stevedore && \
+python3 -m pip install python-dateutil && \
+python3 -m pip install qtfaststart && \
+python3 -m pip install tmdbsimple && \
+python3 -m pip install mutagen && \
+python3 -m pip install requests[security]
