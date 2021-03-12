@@ -19,7 +19,6 @@ python3 -m pip install --user --upgrade pip && \
 python3 -m pip install setuptools && \
 python3 -m pip install wheel && \
 python3 -m pip install idna && \
-python3 -m pip install requests-cache && \
 python3 -m pip install requests && \
 python3 -m pip install requests[security] && \
 python3 -m pip install requests-cache && \
