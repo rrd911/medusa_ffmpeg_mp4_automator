@@ -19,9 +19,9 @@ python3 -m pip install --user --upgrade pip && \
 python3 -m pip install setuptools && \
 python3 -m pip install wheel && \
 python3 -m pip install idna && \
+python3 -m pip install idna && \
 python3 -m pip install requests-cache && \
 python3 -m pip install requests && \
-python3 -m pip install requests[security] && \
 python3 -m pip install requests-cache && \
 python3 -m pip install babelfish && \
 python3 -m pip install guessit && \
@@ -31,6 +31,7 @@ python3 -m pip install python-dateutil && \
 python3 -m pip install qtfaststart && \
 python3 -m pip install tmdbsimple && \
 python3 -m pip install mutagen && \
+python3 -m pip install requests[security] && \
 git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
 chown -R abc:ping /app/sickbeard_mp4_automator && \
 ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.ini
