@@ -4,7 +4,6 @@ echo "**** install packages ****" && \
 apk update && apk add --no-cache \
 ffmpeg \
 git \
-rust \
 python3 \
 gcc \
 libffi-dev \
@@ -29,8 +28,6 @@ python3 -m pip install setuptools && \
 python3 -m pip install requests[security] && \
 python3 -m pip install wheel && \
 python3 -m pip install idna && \
-python3 -m pip install idna && \
-python3 -m pip install requests-cache && \
 python3 -m pip install requests && \
 python3 -m pip install requests-cache && \
 python3 -m pip install babelfish && \
