@@ -4,6 +4,7 @@ echo "**** install packages ****" && \
 apk update && apk add --no-cache \
 ffmpeg \
 git \
+rust \
 python3 \
 gcc \
 libffi-dev \
