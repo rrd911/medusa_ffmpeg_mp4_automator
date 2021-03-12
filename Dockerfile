@@ -11,9 +11,12 @@ libc-dev \
 openssl-dev \
 libxml2-dev \
 libxslt-dev \
+musl-dev \
+cargo \
 py3-pip \
 python3-dev \
 nano && \
+
 # install pip, venv, and set up a virtual self contained python environment
 python3 -m pip install --user --upgrade pip && \
 python3 -m pip install setuptools && \
