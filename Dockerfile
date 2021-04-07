@@ -23,7 +23,7 @@ git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_
 ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.ini && \
 
 # install pip, venv, and set up a virtual self contained python environment
-python3 -m pip install --user --upgrade pip && \
+python3 -m pip install --user -U pip && \
 python3 -m pip install setuptools && \
 python3 -m pip install requests[security] && \
 python3 -m pip install wheel && \
