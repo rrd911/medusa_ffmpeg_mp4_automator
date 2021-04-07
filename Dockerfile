@@ -1,7 +1,7 @@
 FROM pymedusa/medusa
 RUN \
 echo "**** install packages ****" && \
-apk update && apk add --no-cache \
+apk update && apk add \
 ffmpeg \
 git \
 python3 \
