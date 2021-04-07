@@ -16,6 +16,7 @@ cargo \
 py3-pip \
 python3-dev \
 nano && \
+rust && \
 
 # download sickbeard_mp4_automator repo
 git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
@@ -26,7 +27,7 @@ ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.in
 python3 -m pip install --user -U pip && \
 python3 -m pip install setuptools && \
 python3 -m pip install requests[security] && \
-python3 -m pip install --no-use-pep517 cryptography && \
+python3 -m pip install cryptography && \
 python3 -m pip install wheel && \
 python3 -m pip install idna && \
 python3 -m pip install requests && \
