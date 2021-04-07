@@ -11,6 +11,7 @@ libc-dev \
 openssl-dev \
 libxml2-dev \
 libxslt-dev \
+libxmlsec1-dev \
 musl-dev \
 cargo \
 py3-pip \
