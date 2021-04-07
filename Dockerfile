@@ -15,7 +15,6 @@ musl-dev \
 cargo \
 py3-pip \
 python3-dev \
-rust-1.51.0 \
 nano && \
 
 # download sickbeard_mp4_automator repo
