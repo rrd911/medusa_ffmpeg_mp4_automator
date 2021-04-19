@@ -1,7 +1,7 @@
-FROM pymedusa/medusa
+FROM linuxserver/medusa
 RUN \
-#echo "**** install packages ****" && \
-apk --update-cache upgrade && apk add \
+echo "**** install packages ****" && \
+apk update && apk add --no-cache \
 ffmpeg \
 git \
 python3 \
@@ -17,17 +17,12 @@ py3-pip \
 python3-dev \
 nano && \
 
-# download sickbeard_mp4_automator repo
-git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
-#chown -R abc:ping /app/sickbeard_mp4_automator && \
-ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.ini && \
-
 # install pip, venv, and set up a virtual self contained python environment
-#python3 -m pip install --user --upgrade pip setuptools && \
-python3 -m pip install --upgrade pip setuptools wheel && \
-# python3 -m pip install setuptools && \
-python3 -m pip install requests && \
-python3 -m pip install cryptography && \
+python3 -m pip install --user --upgrade pip && \
+python3 -m pip install setuptools && \
+python3 -m pip install requests[security] && \
+python3 -m pip install wheel && \
+python3 -m pip install idna && \
 python3 -m pip install requests && \
 python3 -m pip install requests-cache && \
 python3 -m pip install babelfish && \
@@ -37,8 +32,13 @@ python3 -m pip install stevedore && \
 python3 -m pip install python-dateutil && \
 python3 -m pip install qtfaststart && \
 python3 -m pip install tmdbsimple && \
-python3 -m pip install idna && \
-python3 -m pip install pymediainfo && \
-#python3 -m pip install wheel && \
-python3 -m pip install mutagen
+python3 -m pip install mutagen && \
 
+# download sickbeard_mp4_automator repo
+git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
+
+#set permissions on sickbeard_mp4_automator directory
+chown -R abc:ping /app/sickbeard_mp4_automator && \
+
+# link autoProcess.ini under persistant config folder
+ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.ini
