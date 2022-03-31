@@ -35,7 +35,7 @@ python3 -m pip install tmdbsimple && \
 python3 -m pip install mutagen && \
 
 # download sickbeard_mp4_automator repo
-git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
+git clone https://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
 
 #set permissions on sickbeard_mp4_automator directory
 chown -R abc:ping /app/sickbeard_mp4_automator && \
