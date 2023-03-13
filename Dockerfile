@@ -38,7 +38,7 @@ python3 -m pip install mutagen && \
 git clone https://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
 
 #set permissions on sickbeard_mp4_automator directory
-chown -R abc:ping /app/sickbeard_mp4_automator && \
+chown -R abc:abc /app/sickbeard_mp4_automator && \
 
 # link autoProcess.ini under persistant config folder
 ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.ini
