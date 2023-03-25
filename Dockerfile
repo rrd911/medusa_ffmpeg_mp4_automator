@@ -1,4 +1,4 @@
-FROM linuxserver/medusa
+FROM pymedusa/medusa
 RUN \
 echo "**** install packages ****" && \
 apk update && apk upgrade && apk add --no-cache \
@@ -39,7 +39,7 @@ python3 -m pip install cleanit && \
 git clone https://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator
 
 #set permissions on sickbeard_mp4_automator directory
-RUN chown -R abc:abc /app/sickbeard_mp4_automator
+RUN chown -R 1000:998 /app/sickbeard_mp4_automator
 
 # link autoProcess.ini under persistant config folder
 RUN ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.ini
