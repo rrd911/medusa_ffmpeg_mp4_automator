@@ -16,6 +16,7 @@ cargo \
 py3-pip \
 python3-dev \
 nano && \
+apk update && apk upgrade &&\
 
 # install pip, venv, and set up a virtual self contained python environment
 python3 -m pip install --user --upgrade pip && \
