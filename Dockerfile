@@ -1,7 +1,7 @@
 FROM linuxserver/medusa
 RUN \
 echo "**** install packages ****" && \
-apk update && apk add --no-cache \
+apk update && apk upgrade && apk add --no-cache \
 ffmpeg \
 git \
 python3 \
@@ -36,10 +36,10 @@ python3 -m pip install mutagen && \
 python3 -m pip install cleanit && \
 
 # download sickbeard_mp4_automator repo
-git clone https://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator && \
+git clone https://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator
 
 #set permissions on sickbeard_mp4_automator directory
-chown -R abc:998 /app/sickbeard_mp4_automator && \
+RUN chown -R abc:abc /app/sickbeard_mp4_automator
 
 # link autoProcess.ini under persistant config folder
-ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.ini
+RUN ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.ini
