@@ -16,6 +16,7 @@ cargo \
 py3-pip \
 python3-dev \
 nano && \
+apk update && apk upgrade && \
 
 # install pip, venv, and set up a virtual self contained python environment
 python3 -m pip install --user --upgrade pip && \
@@ -39,7 +40,7 @@ python3 -m pip install cleanit && \
 git clone https://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator
 
 #set permissions on sickbeard_mp4_automator directory
-RUN chown -R abc:abc /app/sickbeard_mp4_automator
+RUN chown -R 1000:998 /app/sickbeard_mp4_automator
 
 # link autoProcess.ini under persistant config folder
 RUN ln -s /config/autoProcess.ini /app/sickbeard_mp4_automator/config/autoProcess.ini
