@@ -1,7 +1,7 @@
 FROM linuxserver/medusa
 RUN \
 echo "**** install packages ****" && \
-apk update && apk add --no-cache \
+apk update && apk upgrade && apk add --no-cache \
 ffmpeg \
 git \
 python3 \
