@@ -1,4 +1,4 @@
-FROM pymedusa/medusa
+FROM linuxserver/medusa
 RUN \
 echo "**** install packages ****" && \
 apk update && apk upgrade && apk add --no-cache \
@@ -33,6 +33,7 @@ python3 -m pip install python-dateutil && \
 python3 -m pip install qtfaststart && \
 python3 -m pip install tmdbsimple && \
 python3 -m pip install mutagen && \
+python3 -m pip install cleanit && \
 
 # download sickbeard_mp4_automator repo
 git clone https://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator
