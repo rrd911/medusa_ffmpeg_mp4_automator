@@ -15,7 +15,9 @@ musl-dev \
 cargo \
 py3-pip \
 python3-dev \
-nano && \
+nano \
+ttf-dejavu \
+libass && \
 apk update && apk upgrade && \
 
 # install pip, venv, and set up a virtual self contained python environment
