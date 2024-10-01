@@ -15,23 +15,23 @@ musl-dev \
 cargo \
 py3-pip \
 python3-dev \
-python3-setuptools \
-python3-requests \
-python3-requests-cache \
-python3-wheel \
-python3-idna \
-python3-babelfish \
-python3-guessit \
-python3-subliminal \
-python3-stevedore \
-python3-dateutil \
-python3-tmdbsimple \
-python3-mutagen \
+py3-setuptools \
+#python3-requests \
+#python3-requests-cache \
+#python3-wheel \
+#python3-idna \
+#python3-babelfish \
+#python3-guessit \
+#python3-subliminal \
+#python3-stevedore \
+#python3-dateutil \
+#python3-tmdbsimple \
+#python3-mutagen \
 nano && \
 apk update && apk upgrade &&\
 
 # install pip, venv, and set up a virtual self contained python environment
-#python3 -m pip install --user --upgrade pip && \
+python3 -m pip install --user --upgrade pip && \
 #python3 -m pip install setuptools && \
 #python3 -m pip install requests[security] && \
 #python3 -m pip install wheel && \
