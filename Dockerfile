@@ -32,7 +32,7 @@ nano && \
 apk update && apk upgrade &&\
 
 # install pip, venv, and set up a virtual self contained python environment
-python3 -m pipx install --upgrade pip && \
+#python3 -m pipx install --upgrade pip && \
 #python3 -m pip install setuptools && \
 #python3 -m pip install requests[security] && \
 #python3 -m pip install wheel && \
@@ -42,7 +42,7 @@ python3 -m pipx install --upgrade pip && \
 #python3 -m pip install babelfish && \
 #python3 -m pip install guessit && \
 #python3 -m pip install subliminal && \
-#python3 -m pip install stevedore && \
+python3 -m pipx install stevedore && \
 #python3 -m pip install python-dateutil && \
 #python3 -m pip install qtfaststart && \
 #python3 -m pip install tmdbsimple && \
