@@ -42,7 +42,7 @@ apk update && apk upgrade &&\
 #python3 -m pip install babelfish && \
 #python3 -m pip install guessit && \
 #python3 -m pip install subliminal && \
-python3 -m pip install stevedore && \
+#python3 -m pip install stevedore && \
 #python3 -m pip install python-dateutil && \
 #python3 -m pip install qtfaststart && \
 #python3 -m pip install tmdbsimple && \
