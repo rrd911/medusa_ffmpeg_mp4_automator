@@ -19,7 +19,7 @@ nano && \
 apk update && apk upgrade &&\
 
 # install pip, venv, and set up a virtual self contained python environment
-#python3 -m pip install --user --upgrade pip && \
+python3 -m pip install --user --upgrade pip && \
 #python3 -m pip install setuptools && \
 #python3 -m pip install requests[security] && \
 #python3 -m pip install wheel && \
