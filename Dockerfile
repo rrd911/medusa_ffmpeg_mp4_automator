@@ -22,10 +22,10 @@ py3-wheel \
 py3-idna \
 py3-babelfish \
 py3-guessit \
-py3-subliminal \
-py3-stevedore \
+*subliminal \
+*py3-stevedore \
 py3-dateutil \
-py3-tmdbsimple \
+*py3-tmdbsimple \
 py3-mutagen \
 nano && \
 apk update && apk upgrade &&\
