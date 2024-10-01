@@ -14,6 +14,7 @@ libxslt-dev \
 musl-dev \
 cargo \
 py3-pip \
+py3-pipx \
 python3-dev \
 py3-setuptools \
 py3-requests \
@@ -31,7 +32,7 @@ nano && \
 apk update && apk upgrade &&\
 
 # install pip, venv, and set up a virtual self contained python environment
-python3 -m pip install --upgrade pip && \
+python3 -m pipx install --upgrade pip && \
 #python3 -m pip install setuptools && \
 #python3 -m pip install requests[security] && \
 #python3 -m pip install wheel && \
