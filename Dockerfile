@@ -15,18 +15,18 @@ musl-dev \
 cargo \
 py3-pip \
 python3-dev \
-python3-setuptools\
-python3-requests\
-python3-requests-cache\
-python3-wheel\
-python3-idna\
-python3-babelfish\
-python3-guessit\
-python3-subliminal\
-python3-stevedore\
-python3-dateutil\
-python3-tmdbsimple\
-python3-mutagen\
+python3-setuptools \
+python3-requests \
+python3-requests-cache \
+python3-wheel \
+python3-idna \
+python3-babelfish \
+python3-guessit \
+python3-subliminal \
+python3-stevedore \
+python3-dateutil \
+python3-tmdbsimple \
+python3-mutagen \
 nano && \
 apk update && apk upgrade &&\
 
