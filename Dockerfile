@@ -14,7 +14,7 @@ libxslt-dev \
 musl-dev \
 cargo \
 py3-pip \
-py3-pipx \
+pipx \
 python3-dev \
 py3-setuptools \
 py3-requests \
