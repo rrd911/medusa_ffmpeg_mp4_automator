@@ -1,4 +1,4 @@
-FROM linuxserver/medusa
+FROM linuxserver/medusa:latest
 RUN \
 echo "**** install packages ****" && \
 apk update && apk upgrade && apk add --no-cache \
