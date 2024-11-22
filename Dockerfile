@@ -16,18 +16,18 @@ cargo \
 py3-pip \
 pipx \
 python3-dev \
-py3-setuptools \
-py3-requests \
-py3-requests-cache \
-py3-wheel \
-py3-idna \
-py3-babelfish \
-py3-guessit \
-subliminal \
-py3-stevedore \
-py3-dateutil \
-py3-tmdbsimple \
-py3-mutagen \
+#py3-setuptools \
+#py3-requests \
+#py3-requests-cache \
+#py3-wheel \
+#py3-idna \
+#py3-babelfish \
+#py3-guessit \
+#subliminal \
+#py3-stevedore \
+#py3-dateutil \
+#py3-tmdbsimple \
+#py3-mutagen \
 nano && \
 apk update && apk upgrade &&\
 
