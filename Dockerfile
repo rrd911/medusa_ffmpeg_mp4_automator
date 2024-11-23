@@ -17,23 +17,34 @@ py3-pip \
 py3-setuptools \
 pipx \
 python3-dev \
+py3-wheel \
+py3-idna \
+py3-grequests \
+py3-requests-cache \
+py3-babelfish \
+py3-guessit \
+subliminal \
+py3-stevedore \
+dateutils \
+py3-dateutil \
+mutagen \
 nano && \
 
 # install pip, venv, and set up a virtual self contained python environment
 #pipx install setuptools && \
-pipx install requests[security] && \
-pipx install wheel && \
-pipx install idna && \
-pipx install requests && \
-pipx install requests-cache && \
-pipx install babelfish && \
-pipx install guessit && \
-pipx install subliminal && \
-pipx install stevedore && \
-pipx install python-dateutil && \
+#pipx install requests[security] && \
+#pipx install wheel && \
+#pipx install idna && \
+#pipx install requests && \
+#pipx install requests-cache && \
+#pipx install babelfish && \
+#pipx install guessit && \
+#pipx install subliminal && \
+#pipx install stevedore && \
+#pipx install python-dateutil && \
 pipx install qtfaststart && \
 pipx install tmdbsimple && \
-pipx install mutagen && \
+#pipx install mutagen && \
 pipx install cleanit && \
 
 # download sickbeard_mp4_automator repo
