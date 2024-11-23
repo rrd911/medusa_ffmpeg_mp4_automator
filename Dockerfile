@@ -30,6 +30,7 @@ mutagen \
 nano && \
 
 # install pip, venv, and set up a virtual self contained python environment
+pip install tmdbsimple && \
 pipx ensurepath && \
 #pipx install setuptools && \
 #pipx install requests[security] && \
@@ -43,7 +44,6 @@ pipx install subliminal && \
 #pipx install stevedore && \
 #pipx install python-dateutil && \
 pipx install qtfaststart && \
-#pip install tmdbsimple && \
 pipx install tmdbsimple && \
 #pipx install mutagen && \
 pipx install cleanit && \
