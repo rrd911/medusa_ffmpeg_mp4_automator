@@ -19,24 +19,21 @@ python3-dev \
 nano && \
 
 # install pip, venv, and set up a virtual self contained python environment
-python3 -m venv ~/py_envs
-source ~/py_envs/bin/activate
-python3 -m pip install --user --upgrade pip && \
-python3 -m pip install --user setuptools && \
-python3 -m pip install --user requests[security] && \
-python3 -m pip install --user wheel && \
-python3 -m pip install --user idna && \
-python3 -m pip install --user requests && \
-python3 -m pip install --user requests-cache && \
-python3 -m pip install --user babelfish && \
-python3 -m pip install --user guessit && \
-python3 -m pip install --user subliminal && \
-python3 -m pip install --user stevedore && \
-python3 -m pip install --user python-dateutil && \
-python3 -m pip install --user qtfaststart && \
-python3 -m pip install --user tmdbsimple && \
-python3 -m pip install --user mutagen && \
-python3 -m pip install --user cleanit && \
+pipx install setuptools && \
+pipx install requests[security] && \
+pipx install wheel && \
+pipx install idna && \
+pipx install requests && \
+pipx install requests-cache && \
+pipx install babelfish && \
+pipx install guessit && \
+pipx install subliminal && \
+pipx install stevedore && \
+pipx install python-dateutil && \
+pipx install qtfaststart && \
+pipx install tmdbsimple && \
+pipx install mutagen && \
+pipx install cleanit && \
 
 # download sickbeard_mp4_automator repo
 git clone https://github.com/mdhiggins/sickbeard_mp4_automator.git /app/sickbeard_mp4_automator
