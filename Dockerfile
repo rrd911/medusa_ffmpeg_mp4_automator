@@ -24,8 +24,6 @@ py3-requests \
 py3-requests-cache \
 py3-babelfish \
 py3-guessit \
-#subliminal \
-#py3-stevedore \
 dateutils \
 py3-dateutil \
 mutagen \
@@ -42,7 +40,7 @@ pipx ensurepath
 #pipx install babelfish && \
 #pipx install guessit && \
 pipx install subliminal && \
-pipx install stevedore && \
+#pipx install stevedore && \
 #pipx install python-dateutil && \
 pipx install qtfaststart && \
 pipx install tmdbsimple && \
