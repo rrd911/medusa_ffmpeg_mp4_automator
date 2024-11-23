@@ -33,7 +33,7 @@ nano && \
 
 # install pip, venv, and set up a virtual self contained python environment
 #pipx install setuptools && \
-pipx install requests[security] && \
+#pipx install requests[security] && \
 #pipx install wheel && \
 #pipx install idna && \
 #pipx install requests && \
