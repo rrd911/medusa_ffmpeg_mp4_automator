@@ -17,9 +17,10 @@ py3-pip \
 py3-setuptools \
 pipx \
 python3-dev \
+py3-setuptools \
 py3-wheel \
 py3-idna \
-py3-grequests \
+py3-requests \
 py3-requests-cache \
 py3-babelfish \
 py3-guessit \
