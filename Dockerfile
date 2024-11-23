@@ -30,7 +30,7 @@ mutagen \
 nano && \
 
 # install pip, venv, and set up a virtual self contained python environment
-pipx ensurepath
+pipx ensurepath && \
 #pipx install setuptools && \
 #pipx install requests[security] && \
 #pipx install wheel && \
