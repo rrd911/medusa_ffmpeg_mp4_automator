@@ -13,24 +13,14 @@ libxml2-dev \
 libxslt-dev \
 musl-dev \
 cargo \
-py3-pip \
+#py3-pip \
 pipx \
 python3-dev \
-#py3-setuptools \
-#py3-requests \
-#py3-requests-cache \
-#py3-wheel \
-#py3-idna \
-#py3-babelfish \
-#py3-guessit \
-#subliminal \
-#py3-stevedore \
-#py3-dateutil \
-#py3-tmdbsimple \
-#py3-mutagen \
 nano && \
 
 # install pip, venv, and set up a virtual self contained python environment
+python3 -m pip install --user pipx &&\
+python3 -m pipx ensurepath &&\
 #python3 -m pip install --user --upgrade pip && \
 python3 -m pip install --user setuptools && \
 python3 -m pip install --user requests[security] && \
