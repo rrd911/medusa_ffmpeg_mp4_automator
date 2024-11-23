@@ -24,8 +24,8 @@ py3-requests \
 py3-requests-cache \
 py3-babelfish \
 py3-guessit \
-subliminal \
-py3-stevedore \
+#subliminal \
+#py3-stevedore \
 dateutils \
 py3-dateutil \
 mutagen \
@@ -33,15 +33,15 @@ nano && \
 
 # install pip, venv, and set up a virtual self contained python environment
 #pipx install setuptools && \
-#pipx install requests[security] && \
+pipx install requests[security] && \
 #pipx install wheel && \
 #pipx install idna && \
 #pipx install requests && \
 #pipx install requests-cache && \
 #pipx install babelfish && \
 #pipx install guessit && \
-#pipx install subliminal && \
-#pipx install stevedore && \
+pipx install subliminal && \
+pipx install stevedore && \
 #pipx install python-dateutil && \
 pipx install qtfaststart && \
 pipx install tmdbsimple && \
