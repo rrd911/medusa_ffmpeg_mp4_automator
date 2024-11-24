@@ -29,6 +29,8 @@ py3-dateutil \
 mutagen \
 nano && \
 RUN rm /usr/lib/python*/EXTERNALLY-MANAGED && \
+python3 -m ensurepip && \
+pip install tmdbsimple && \
 # install pip, venv, and set up a virtual self contained python environment
 pipx ensurepath && \
 #pipx install setuptools && \
@@ -43,8 +45,6 @@ pipx install subliminal && \
 #pipx install stevedore && \
 #pipx install python-dateutil && \
 pipx install qtfaststart && \
-python3 -m ensurepip && \
-pip install tmdbsimple && \
 pipx install tmdbsimple && \
 #pipx install mutagen && \
 pipx install cleanit && \
