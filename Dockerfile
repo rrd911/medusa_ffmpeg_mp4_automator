@@ -28,7 +28,7 @@ dateutils \
 py3-dateutil \
 mutagen \
 nano && \
-RUN rm /usr/lib/python*/EXTERNALLY-MANAGED && \
+rm /usr/lib/python*/EXTERNALLY-MANAGED && \
 python3 -m ensurepip && \
 pip install tmdbsimple && \
 # install pip, venv, and set up a virtual self contained python environment
